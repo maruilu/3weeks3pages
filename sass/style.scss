@@ -1,83 +1,73 @@
 @import "compass/reset";
 @import "compass/css3";
 
-body{
-  background: url("../images/libra.jpg");
-  color:white;
+body {
+  color: white;
+  background-color: black;
+  .content {
+    background-image: url("../images/Jay.jpeg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 1000px;
+    background-color: black;
+    color: white;
+    text-align: right;
 
+    .time {
+      height: 300px;
+      img {
+        width: 100%;
+      }
 
-}
-
-.header {
-  .search-bar {
-    width: 100%;
-    img {
-      display: inline-block;
-    }
-    .search {
-      display: inline-block;
-      width: 90%;
-      margin: 0 auto;
-      text-align: right;
-    }
-  }
-
-  .menu {
-    text-align:center;
-    ul {
-      background: cornflowerblue;
-      color: white;
-
-      padding: 10px;
-      li {
-        display: inline-block;
-        margin-left: 40px;
+      .hello {
+        position: absolute;
+        left: 100px;
+        color: #4484c2;
+        font-weight: bold;
+        font-size: 30px;
+        text-align: left;
+        color: white;
+        padding-top: 220px; 
+        p{
+          margin-bottom: 20px;
+        } 
       }
     }
   }
-}
-
-.container {
-  .option {
-    display: inline-block;
-    button {
-      width: 100px;
-      height: 50px;
-      font-size: 16px;
-      background-color: cornflowerblue;
-      color: white;
-      margin-bottom: 10px;
-      border-radius: 8px;
-      border: 1px solid black;
+  .containter{
+    width: 1440px;
+    margin: 0 auto;
+    h2 {
+      height: 100px;
+      margin: 30px;
+      text-align: center;
+      font-size: 30px;
+      font-style:inherit; 
     }
 
-  }
-
-  img {
-    width: 400px;
-    height: 450px;
-    margin-left: 30px;
 
   }
-  .hello{
-    font-size: 36px;
-    margin-top: 40px;
-  }
-  .msg{
-    font-size: 36px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-  }
-  text-align: center;
 }
 
-.img {
-  height: 30px;
-  width: 30px;
+.stories {
+  border-right: 6px solid red;
+  width: 50%; 
 }
+.story {
+  padding: 10px;
+  text-align: right;  
+  // width: 50%;
+  height: 350px;
 
-.footer {
-  height: 100px;
-  text-align: center;
-  padding: 30px;
+  &:nth-child(odd){
+    transform: translate(230%);
+    width: 300px;
+    text-align: left;
+
+  }
+  img{
+    height: 320px; 
+    width: 280px;
+    margin-top: 10px; 
+  }
 }

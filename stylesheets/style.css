@@ -65,87 +65,77 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 /* line 4, ../sass/style.scss */
 body {
-  background: url("../images/libra.jpg");
   color: white;
+  background-color: black;
 }
-
-/* line 12, ../sass/style.scss */
-.header .search-bar {
-  width: 100%;
-}
-/* line 14, ../sass/style.scss */
-.header .search-bar img {
-  display: inline-block;
-}
-/* line 17, ../sass/style.scss */
-.header .search-bar .search {
-  display: inline-block;
-  width: 90%;
-  margin: 0 auto;
+/* line 7, ../sass/style.scss */
+body .content {
+  background-image: url("../images/Jay.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 1000px;
+  background-color: black;
+  color: white;
   text-align: right;
 }
-/* line 25, ../sass/style.scss */
-.header .menu {
-  text-align: center;
+/* line 16, ../sass/style.scss */
+body .content .time {
+  height: 300px;
 }
-/* line 27, ../sass/style.scss */
-.header .menu ul {
-  background: cornflowerblue;
+/* line 18, ../sass/style.scss */
+body .content .time img {
+  width: 100%;
+}
+/* line 22, ../sass/style.scss */
+body .content .time .hello {
+  position: absolute;
+  left: 100px;
+  color: #4484c2;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: left;
   color: white;
-  padding: 10px;
+  padding-top: 220px;
 }
-/* line 32, ../sass/style.scss */
-.header .menu ul li {
-  display: inline-block;
-  margin-left: 40px;
+/* line 31, ../sass/style.scss */
+body .content .time .hello p {
+  margin-bottom: 20px;
+}
+/* line 37, ../sass/style.scss */
+body .containter {
+  width: 1440px;
+  margin: 0 auto;
+}
+/* line 40, ../sass/style.scss */
+body .containter h2 {
+  height: 100px;
+  margin: 30px;
+  text-align: center;
+  font-size: 30px;
+  font-style: inherit;
 }
 
-/* line 40, ../sass/style.scss */
-.container {
-  text-align: center;
+/* line 52, ../sass/style.scss */
+.stories {
+  border-right: 6px solid red;
+  width: 50%;
 }
-/* line 41, ../sass/style.scss */
-.container .option {
-  display: inline-block;
-}
-/* line 43, ../sass/style.scss */
-.container .option button {
-  width: 100px;
-  height: 50px;
-  font-size: 16px;
-  background-color: cornflowerblue;
-  color: white;
-  margin-bottom: 10px;
-  border-radius: 8px;
-  border: 1px solid black;
-}
+
 /* line 56, ../sass/style.scss */
-.container img {
-  width: 400px;
-  height: 450px;
-  margin-left: 30px;
+.story {
+  padding: 10px;
+  text-align: right;
+  height: 350px;
 }
 /* line 62, ../sass/style.scss */
-.container .hello {
-  font-size: 36px;
-  margin-top: 40px;
+.story:nth-child(odd) {
+  transform: translate(230%);
+  width: 300px;
+  text-align: left;
 }
-/* line 66, ../sass/style.scss */
-.container .msg {
-  font-size: 36px;
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-
-/* line 74, ../sass/style.scss */
-.img {
-  height: 30px;
-  width: 30px;
-}
-
-/* line 79, ../sass/style.scss */
-.footer {
-  height: 100px;
-  text-align: center;
-  padding: 30px;
+/* line 68, ../sass/style.scss */
+.story img {
+  height: 320px;
+  width: 280px;
+  margin-top: 10px;
 }
